@@ -1,0 +1,6 @@
+{
+  "name": "elio-x-daily",
+  "version": "0.1.0",
+  "description": "X search with full engagement metrics for the Elio daily content workflow",
+  "opencli": ">=1.8.6"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "opencli-plugin-elio-x-daily",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "X search with full engagement metrics for the Elio daily content workflow",
+  "peerDependencies": {
+    "@jackwener/opencli": ">=1.8.6"
+  }
+}
