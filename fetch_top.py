@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""抓取过去 N 小时 X 中文区（美股/财经/AI/财富自由/个人成长）浏览量 Top10 和互动量 Top10。
+"""抓取过去 N 小时 X 中文区（美股/财经/AI/财富自由）浏览量 Top10 和互动量 Top10。
 
 用法：python3 fetch_top.py [--date YYYY-MM-DD] [--dry-run]
 产出：data/<date>/raw.json, data/<date>/top.json, data/<date>/top.md
