@@ -16,7 +16,7 @@
 | `engage_queue.py` | 按计划点赞并评论：每条之间随机等待，发前核对账号，发后核实评论挂在原帖下面；发成独立帖或核实不到就停 |
 | `followup.py` / `analyze_followup.py` | 回访评论所在的楼，统计浏览和互动 |
 | `opencli-plugin/` | 自建 opencli 插件 `xhot search`，返回带浏览量、收藏等完整互动数据的搜索结果 |
-| `style/` | 写作规范：`elio_voice.md`（人设、写法、红线）、`humanizer_zh.md`（去 AI 味清单） |
+| `style/` | 写作规范：`openbit_reply.md`（回复写法 v2，在 Lina 版上改，带【留 / 改 / 新】标记）、`elio_voice.md`（Lina 原版，当对照）、`humanizer_zh.md`（去 AI 味清单） |
 | `charts/` | 配图脚本 |
 
 ## 常用命令
