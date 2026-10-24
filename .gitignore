@@ -1,4 +1,5 @@
 # 运行数据和记录（不进仓库）
+config.local.json
 data/
 history/
 review/

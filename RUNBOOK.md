@@ -1,4 +1,16 @@
-# Elio X 日更工作流 · 执行手册
+# X 日更 + 赞评工作流 · 执行手册
+
+## 赞评线（OpenBit 版，每天一遍）
+
+1. `python3 daily_targets.py --hours 30` → 开 `data/<日期>/候选.md`。每位作者一行，按分排；⛔ 的是 7 天内评过的，跳过
+2. 从前 15 行里挑 ≤ `reply_daily_cap`（起步 5）位作者：优先 发了不到 6 小时 + 帖里有 OpenBit 有页面的标的 / 人物 + 不是亏钱 / 爆仓 / 骂战帖
+3. `python3 ob_facts.py <代码或 slug ...>` 把要引用的页抓下来，回复里每个数都要在输出里找得到原句
+4. 按 `style/openbit_reply.md` 写 `data/<日期>/plan.json`（9 个标签齐），同时出一份 `今日账号与评论.md` 给人看
+5. 人勾过的条目才进 plan.json；没勾的删掉
+6. `python3 engage_queue.py data/<日期>/plan.json`（账号读 `config.local.json`；日顶 / 冷却 / 作息门 / 跨批间隔四道门过不了会直接 STOP）
+7. +2h、+24h 各跑一次 `python3 followup.py`，周五看 `analyze_followup.py`
+
+## 日更线（Lina 原流程）
 
 定时任务每天早上按这份手册跑。所有路径都相对于 `/Users/bit/Desktop/elio-x-daily/`，`<D>` 是当天日期（YYYY-MM-DD）。
 

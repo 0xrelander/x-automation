@@ -86,5 +86,50 @@
     "赵丽颖",
     "黄毛",
     "出轨"
-  ]
+  ],
+  "reply_window_hours": 30,
+  "reply_min_faves": {
+    "zh": 30,
+    "en": 150
+  },
+  "reply_daily_cap": 5,
+  "author_cooldown_days": 7,
+  "batch_gap_min": 15,
+  "active_hours": [
+    6,
+    23
+  ],
+  "link_base": "https://openbit.trade",
+  "products": [
+    "top"
+  ],
+  "query_suffix_en": "lang:en -filter:replies -filter:nativeretweets",
+  "groups_en": {
+    "US stocks": [
+      "$NVDA",
+      "$TSLA",
+      "$AMD",
+      "$AVGO",
+      "$MSFT",
+      "$AAPL",
+      "$META",
+      "$GOOGL",
+      "$AMZN",
+      "$MU",
+      "$TSM",
+      "$INTC"
+    ],
+    "smart money": [
+      "13F",
+      "\"smart money\"",
+      "Pelosi",
+      "Burry",
+      "Buffett",
+      "Druckenmiller",
+      "Ackman",
+      "\"Cathie Wood\"",
+      "\"insider buying\"",
+      "\"congress trades\""
+    ]
+  }
 }

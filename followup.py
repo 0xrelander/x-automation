@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""回访：逐条读 Elio 评论所在的楼，统计博主是否回复、评论获赞、其他人回复数，写入 followup.json。
+"""回访：逐条读自己评论所在的楼，统计博主是否回复、评论获赞、其他人回复数，写入 followup.json。
 
 用法：python3 followup.py
 """
@@ -10,7 +10,8 @@ from pathlib import Path
 
 from post_queue import ROOT, log, opencli
 
-ACCOUNT = "ElioCUIsg"
+LOCAL = json.loads((ROOT / "config.local.json").read_text()) if (ROOT / "config.local.json").exists() else {}
+ACCOUNT = LOCAL.get("account", "")
 
 
 def main():
